@@ -1,0 +1,20 @@
+<div class="container">
+<nav class="navbar bg-body-tertiary p-2 m-3 border shadow">
+<%= link_to "New List", new_list_path, class:"btn shadow-sm btn-primary m-3" %></nav>
+<div class="row">
+<div class="col-md-4">
+<div class="card  align-items-start p-3 m-3">
+<% @lists.each do |list| %>
+<div class="card rounder" style="width: 18rem;">
+  <%= image_tag("jakob-owens-CiUR8zISX60-unsplash.jpg", class:" rounded mx-auto img-fluid m-3 p-4")  %>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"><%= link_to list.name %>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<% end %>
+</div>
+</div>
+</div>
+</div>

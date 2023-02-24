@@ -1,0 +1,13 @@
+
+
+<!-- app/views/lists/new.html.erb -->
+<img src="" alt="">
+<div , class="navbar-lewagon m-2 p-3">
+<h1>New List</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create List", class: "btn btn-primary p m-2" %>
+<% end %>
+
+<%= link_to "Back", lists_path, class: "btn btn-primary p m-2"%>
+</div>
